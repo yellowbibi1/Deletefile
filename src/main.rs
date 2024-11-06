@@ -35,7 +35,7 @@ fn shred_file(path: &str) -> io::Result<()> {
 }
 
 fn main() {
-    let path = "D:/huorong/Sysdiag/bin/BugReport.exe"; // 要粉碎的文件路径
+    let path = "D:/desktop/远程 - 副本.txt"; // 要粉碎的文件路径
     match shred_file(path) {
         Ok(_) => println!("文件已成功粉碎！"),
         Err(e) => eprintln!("粉碎文件时出错: {}", e),
